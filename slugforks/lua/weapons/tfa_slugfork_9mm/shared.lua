@@ -16,7 +16,6 @@ SWEP.Weight				= 30			-- rank relative ot other weapons. bigger is better
 SWEP.AutoSwitchTo			= true		-- Auto switch to if we pick it up
 SWEP.AutoSwitchFrom			= true		-- Auto switch from if you pick up a better weapon
 SWEP.HoldType 				= "pistol"		-- how others view you carrying the weapon
-
 SWEP.ViewModelFOV			= 55
 SWEP.ViewModelFlip			= false
 SWEP.ViewModel				= "models/weapons/c_pistol.mdl"	-- Weapon view model
@@ -26,7 +25,6 @@ SWEP.Spawnable				= true
 SWEP.UseHands = true
 SWEP.AdminSpawnable			= true
 SWEP.FiresUnderwater = false
-
 SWEP.Primary.Sound			= Sound("^weapons/pistol/pistol_fire3.wav")		-- Script that calls the primary fire sound
 SWEP.Primary.RPM			= 444			-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 18		-- Size of a clip
@@ -36,27 +34,21 @@ SWEP.Primary.KickDown			= 0.2		-- Maximum down recoil (skeet)
 SWEP.Primary.KickHorizontal		= 0.2		-- Maximum up recoil (stock)
 SWEP.Primary.Automatic			= false		-- Automatic = true; Semi Auto = false
 SWEP.Primary.Ammo			= "pistol"
-
 SWEP.Secondary.IronFOV			= 100		-- How much you 'zoom' in. Less is more! 	
-
 SWEP.data 				= {}				--The starting firemode
 SWEP.data.ironsights			= 1
-
 SWEP.EventTable = {
 	[ACT_VM_RELOAD] = {
 		{ ["time"] = 0, ["type"] = "sound", ["value"] = Sound("weapons/pistol/pistol_reload1.wav") }
 	}
 }
-
 SWEP.Primary.NumShots	= 1		-- How many bullets to shoot per trigger pull
 SWEP.Primary.Damage		= 11	-- Base damage per bullet
 SWEP.Primary.Spread		= .0025	-- Define from-the-hip accuracy 1 is terrible, .0001 is exact)
 SWEP.Primary.IronAccuracy = .0015 -- Ironsight accuracy, should be the same for shotguns
-
 -- Enter iron sight info and bone mod info below
 SWEP.IronSightsPos = Vector(-6.04, 0, 2.439)
 SWEP.IronSightsAng = Vector(0.6, -1.3, 2.4)
 SWEP.RunSightsPos = Vector(2.405, -17.334, -21.011)
 SWEP.RunSightsAng = Vector(65, 0, 0)
-
 SWEP.DisableIdleAnimations = false
